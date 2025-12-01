@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "838d6b99-fce6-4231-8c9b-a44b55cf0f21",
+		"name": "Trips",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24297190"
+	},
+	"item": [
+		{
+			"name": "Get Trips",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/trips?origin=BCN&destination=VIE&sort_by=cheapest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"trips"
+					],
+					"query": [
+						{
+							"key": "origin",
+							"value": "BCN"
+						},
+						{
+							"key": "destination",
+							"value": "VIE"
+						},
+						{
+							"key": "sort_by",
+							"value": "cheapest",
+							"description": "fastest or cheapest"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/trips?origin=BCN&destination=VIE&sort_by=cheapest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"trips"
+							],
+							"query": [
+								{
+									"key": "origin",
+									"value": "BCN"
+								},
+								{
+									"key": "destination",
+									"value": "VIE"
+								},
+								{
+									"key": "sort_by",
+									"value": "cheapest",
+									"description": "fastest or cheapest"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "683"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2ab-WAv/P7q024nXCOzpj3hU64SoBWA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Nov 2025 23:13:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"origin\": \"BCN\",\n            \"destination\": \"VIE\",\n            \"cost\": 1266,\n            \"duration\": 22,\n            \"type\": \"car\",\n            \"id\": \"b6d9be11-5fd9-46a6-bde6-d326471a9c2f\",\n            \"display_name\": \"from BCN to VIE by car\"\n        },\n        {\n            \"origin\": \"BCN\",\n            \"destination\": \"VIE\",\n            \"cost\": 5665,\n            \"duration\": 25,\n            \"type\": \"train\",\n            \"id\": \"efc6d243-6c1a-4e61-b73c-c30bcd04b19a\",\n            \"display_name\": \"from BCN to VIE by train\"\n        },\n        {\n            \"origin\": \"BCN\",\n            \"destination\": \"VIE\",\n            \"cost\": 3663,\n            \"duration\": 32,\n            \"type\": \"flight\",\n            \"id\": \"17ab73cc-cd2b-412c-95d5-b0e738a54b7c\",\n            \"display_name\": \"from BCN to VIE by flight\"\n        },\n        {\n            \"origin\": \"BCN\",\n            \"destination\": \"VIE\",\n            \"cost\": 3992,\n            \"duration\": 38,\n            \"type\": \"train\",\n            \"id\": \"d3e74f06-aaa1-451e-a32f-ae7fa9d6fb81\",\n            \"display_name\": \"from BCN to VIE by train\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "400 Bad Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/trips?origin=BCN&sort_by=cheapest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"trips"
+							],
+							"query": [
+								{
+									"key": "origin",
+									"value": "BCN"
+								},
+								{
+									"key": "destination",
+									"value": "VIE",
+									"disabled": true
+								},
+								{
+									"key": "sort_by",
+									"value": "cheapest",
+									"description": "fastest or cheapest"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1063"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"427-pZIJD5Emu5Onrq6YMj+aLHO/yJU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Nov 2025 23:14:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"fail\",\n    \"message\": \"'destination' query param is required\""
+				}
+			]
+		}
+	]
+}

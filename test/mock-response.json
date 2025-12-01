@@ -1,0 +1,38 @@
+[
+  {
+    "origin": "BCN",
+    "destination": "VIE",
+    "cost": 3992,
+    "duration": 38,
+    "type": "train",
+    "id": "1",
+    "display_name": "from BCN to VIE by train"
+  },
+  {
+    "origin": "BCN",
+    "destination": "VIE",
+    "cost": 5665,
+    "duration": 25,
+    "type": "train",
+    "id": "2",
+    "display_name": "from BCN to VIE by train"
+  },
+  {
+    "origin": "BCN",
+    "destination": "VIE",
+    "cost": 3663,
+    "duration": 32,
+    "type": "flight",
+    "id": "3",
+    "display_name": "from BCN to VIE by flight"
+  },
+  {
+    "origin": "BCN",
+    "destination": "VIE",
+    "cost": 1266,
+    "duration": 22,
+    "type": "car",
+    "id": "4",
+    "display_name": "from BCN to VIE by car"
+  }
+]
